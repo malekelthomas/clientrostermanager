@@ -36,5 +36,8 @@ build/
 /src/main/resources/application.properties
 
 ### Node Modules ###
-
 /node_modules
+
+### Webpack ###
+/src/main/resources/static
+

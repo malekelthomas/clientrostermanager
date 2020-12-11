@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+
 @Entity
 public class Client {
 
@@ -13,15 +15,18 @@ public class Client {
     private Integer id;
     private String firstName;
     private String lastName;
-    private int caresId;
+    private String caresId;
+
+
     private int roomNum;
+
     private char bed;
 
     public Client(){
 
     }
 
-    public Client(Integer id, String firstName, String lastName, int caresId, int roomNum, char bed){
+    public Client(Integer id, String firstName, String lastName, String caresId, int roomNum, char bed){
         super();
         this.id = id;
         this.firstName = firstName;
@@ -55,11 +60,11 @@ public class Client {
         this.lastName = lastName;
     }
 
-    public int getCaresId() {
+    public String getCaresId() {
         return this.caresId;
     }
 
-    public void setCaresId(int caresId) {
+    public void setCaresId(String caresId) {
         this.caresId = caresId;
     }
 
